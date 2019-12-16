@@ -1,15 +1,9 @@
-settings.php
 cache/*
 .DS_Store
-.project
 .buildpath
-.settings/*
 .idea*
-resources/themes/classic/.sass-cache/*
-resources/themes/default/.sass-cache/*
-resources/themes/.sass-cache/*
 node_modules*
-/nbproject/private/
-.externalToolBuilders/Generatedata PHP Builder.launch
-nbproject/project.properties
-nbproject/project.xml
+build/*
+config/config.client.js
+server/config.server.js
+dist/

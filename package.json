@@ -1,33 +1,76 @@
 {
   "name": "generatedata",
-  "version": "3.2.8",
-  "description": "free, GNU-licensed, random custom data generator for testing software",
-  "main": "gruntfile.js",
+  "version": "4.0.0",
+  "description": "Free, GNU-licensed, random custom data generator for testing software.",
+  "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --config ./webpack.config.js --mode=development --watch",
+    "build": "node ./scripts/pluginBundles.js & node ./scripts/generateConfigFile.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/benkeen/generatedata.git"
   },
   "author": "Ben Keen",
-  "license": "GPL",
+  "license": "MIT",
   "readmeFilename": "README.md",
   "gitHead": "0c9c909be95a311f2d25efc0f3ed63a1f7f40574",
   "bugs": {
     "url": "https://github.com/benkeen/generatedata/issues"
   },
+  "dependencies": {
+    "@material-ui/core": "^4.7.0",
+    "@material-ui/icons": "^4.5.1",
+    "axios": "^0.19.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "jest-cli": "^24.9.0",
+    "react": "^16.12.0",
+    "react-beautiful-dnd": "^12.1.1",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-select": "^3.0.8",
+    "redux": "^4.0.4",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "shortid": "^2.2.15"
+  },
   "devDependencies": {
-    "grunt-cli": "~0.1.9",
-    "grunt": "~0.4.1",
-    "grunt-contrib-requirejs": "~0.4.1",
-    "grunt-contrib-uglify": "~0.2.4",
-    "grunt-md5": "~0.1.11",
-    "grunt-template": "~0.2.0",
-    "grunt-contrib-cssmin": "~0.6.1",
-    "grunt-search": "~0.1.2"
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "autoprefixer": "6.7.2",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.3.2",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-react": "^7.17.0",
+    "extract-text-webpack-plugin": "1.0.1",
+    "grunt": "^1.0.4",
+    "grunt-cli": "^1.3.2",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "json-loader": "0.5.4",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "1.2.2",
+    "promise": "7.1.1",
+    "reselect": "^4.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-manifest-plugin": "1.1.0"
   }
 }

@@ -24,6 +24,14 @@ Installation is really, really simple. I deliberately wrote the script to be as 
 require additional PHP/Server configuration when setting it up. That said, it *does* require PHP 5.3.0 or later. See 
 the documentation for more info.
 
+## `master` = v4 rewrite
+
+The master branch of this repo now contains the ongoing work for the v4 rewrite. The generatedata.com site, the 
+documentation and everything else is for up to the v3 branch. You can find that code in the `v3` branch. 
+
+Although I'm no longer working on that branch, PRs and bug fixes are very welcome! Just branch off `v3` and put 
+your PRs in against that.
+
 
 ## Pre-packaged solutions
 
@@ -58,26 +66,25 @@ contributors agree that all code is released under this license.
 ## Contributors
 
 In addition to the many fine folk who submit bug reports, a big thanks to the following for their help extending the script:
-
-- [aevans84](https://github.com/aevans84) - Precision option for Normal Distribution (3.2.5)
-- [Tony OHagan](https://github.com/tohagan) - generation of complex JSON structures (3.2.5)
-- [Fabrice Marquès](https://github.com/fmarques56) - French business numbers (SIRET/SIREN) (3.2.3)
-- [Daragh Courtney](https://github.com/daraghc) - [Data Generator Vagrant repo](https://github.com/benkeen/generatedata-vagrant)
-- [Zhao Yang](https://github.com/jptiancai) - Chinese language file (3.1.4)
-- [Anton Nizhegorodov](https://github.com/an1zhegorodov) - Batch size SQL export option (3.1.3)
-- Zeeshan Shaikh - PAN, PIN, CVV, Track 1 and 2 Data Types (3.1.1)
-- [Ap.Mathu](https://github.com/apmuthu) - SQL Export Type updates (INSERT IGNORE)
-- [Manu Ullas](https://github.com/unullmass) - compression option for downloads (3.0.9)
-- [rsicher1](https://github.com/rsicher1) - credit card Data Type (3.0.9)
-- Joeri Noort - IBAN numbers (3.0.8)
-- [Michel Roca](https://github.com/mRoca) - Full and correct French translation (3.0.7)
-- Marco Corona - LDIF Export Type added (3.0.7)
-- [Andre Fortin](https://github.com/twindual) - original Costa Rica Country plugin & Phone-Regional Data Type (3.0.6)
-- [Marcello Verona](https://github.com/marciuz) - Italy Country plugin (3.0.4)
-- [Roberto Aragón](https://github.com/robarago), Charo Baena - Spanish translation & Country plugin (3.0.2)
-- [Kent Chenery](https://github.com/kchenery) - MS SQL plugin (3.0.1)
+https://github.com/benkeen/generatedata/graphs/contributors
 
 ## Changelog
+
+3.4.1 - Nov 24, 2019 
+- Excel Export Type updated for new PHP lib, thanks [@adibaby](https://github.com/adibaby)!
+- Bug fix for SocialSecurityNumber, courtesy of [@guzzisti](https://github.com/guzzisti). 
+- https://github.com/benkeen/generatedata/milestone/26?closed=1
+
+3.4.0 - Nov 16, 2019
+- Misc updates, 
+- new inject SQL feature added. Great work, [@harish81](https://github.com/harish81)!
+- https://github.com/benkeen/generatedata/milestone/25?closed=1
+
+3.3.1 - July 18, 2019
+- https://github.com/benkeen/generatedata/milestone/23?closed=1
+
+3.3.0 - July 1, 2019
+- misc bug fixes
 
 3.2.8 - Sep 12, 2017
 - misc bug fixes
